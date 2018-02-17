@@ -19,6 +19,7 @@ addons:
       - libgmp-dev
       - automake
       - libgmp-dev
+      - rng-tools
 
 script:
   - ln -s /usr/bin/gcc-7 /usr/local/bin/gcc
@@ -26,3 +27,4 @@ script:
   - export CC=/usr/bin/gcc-7
   - export CXX=/usr/bin/g++-7
   - make test
+
